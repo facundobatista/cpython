@@ -976,7 +976,7 @@ math
 ----
 
 * The new function :func:`~math.fma` performs fused multiply-add operations.
-  This computes ``x * y + z`` with only a single round,
+  This computes ``(x * y) + z`` with only a single round,
   and so avoids any intermediate loss of precision.
   It wraps the ``fma()`` function provided by C99,
   and follows the specification of the IEEE 754 "fusedMultiplyAdd" operation
